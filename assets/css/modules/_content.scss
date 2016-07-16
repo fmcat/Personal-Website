@@ -1,0 +1,13 @@
+$module-name: 'content';
+
+.#{$module-name} {
+	background: $light;
+	&-container {
+		max-width: $width-large;
+		margin: auto;
+		padding: 0 10px;
+	}
+	h1, h2, h3 {
+		color: $accent;
+	}
+}

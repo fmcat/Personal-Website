@@ -1,0 +1,67 @@
+/* From the great Paul Irish http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* apply a natural box layout model to all elements, but allowing components to change */
+@import url(https://fonts.googleapis.com/css?family=Lora:700italic,700|Roboto:400,700);
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Lora', serif;
+}
+
+.header {
+  background: #0B3C49;
+  color: #FFFDFD;
+  height: 40px;
+}
+.header-container {
+  max-width: 1020px;
+  margin: auto;
+  padding: 0 10px;
+}
+.header__logo {
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+
+.nav {
+  background: #CBD2D0;
+  text-align: center;
+}
+.nav-container {
+  max-width: 1020px;
+  margin: auto;
+  padding: 5px 10px;
+}
+.nav ol, .nav ul {
+  list-style: none;
+}
+.nav__item {
+  display: inline;
+  padding: 2px 2%;
+  background: #F0E100;
+  color: #0B3C49;
+}
+
+.content {
+  background: #FFFDFD;
+}
+.content-container {
+  max-width: 1020px;
+  margin: auto;
+  padding: 0 10px;
+}
+.content h1, .content h2, .content h3 {
+  color: #731963;
+}

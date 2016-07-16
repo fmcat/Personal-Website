@@ -1,0 +1,16 @@
+// *
+// * Connor MacDonald's screen styles for personal portfolio site.
+// * This file generates one css file, and should only include @import statements
+// * Generally, all styles here will be mobile first.
+
+// Reset for things like box sizing, etc.
+@import 'includes/reset';
+@import url(https://fonts.googleapis.com/css?family=Lora:700italic,700|Roboto:400,700);
+@import 'includes/variables';
+
+// Header and footer modules
+@import 'modules/header';
+@import 'modules/nav';
+@import 'modules/footer';
+
+@import 'modules/content';

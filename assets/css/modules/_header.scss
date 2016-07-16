@@ -1,0 +1,18 @@
+$module-name: 'header';
+
+.#{$module-name} {
+	background: $dark;
+	color: $light;
+	height: 40px;
+	&-container {
+		max-width: $width-large;
+		margin: auto;
+		padding: 0 10px;
+	}
+	&__logo {
+		letter-spacing: 3px;
+		text-align: center;
+		padding-top: 10px;
+		text-transform: uppercase;
+	}
+}

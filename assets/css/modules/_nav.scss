@@ -1,0 +1,20 @@
+$module-name: 'nav';
+
+.#{$module-name} {
+	background: $gray;
+	text-align: center;
+	&-container {
+		max-width: $width-large;
+		margin: auto;
+		padding: 5px 10px;
+	}
+	ol,ul {
+		list-style: none;
+	}
+	&__item {
+		display: inline;
+		padding: 2px 2%;
+		background: $highlight;
+		color: $dark;
+	}
+}
