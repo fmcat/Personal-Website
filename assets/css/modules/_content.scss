@@ -2,10 +2,12 @@ $module-name: 'content';
 
 .#{$module-name} {
 	background: $light;
+	//background: url('../img/front-page-background.jpg');
+	background-size: cover;
 	&-container {
 		max-width: $width-large;
 		margin: auto;
-		padding: 0 10px;
+		padding: 20px 10px;
 	}
 	
 	h1, h2, h3 {

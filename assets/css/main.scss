@@ -5,7 +5,7 @@
 
 // Reset for things like box sizing, etc.
 @import 'includes/reset';
-@import url(https://fonts.googleapis.com/css?family=Lora:700italic,700|Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import 'includes/variables';
 
 // Header and footer modules
@@ -14,3 +14,4 @@
 @import 'modules/footer';
 
 @import 'modules/content';
+@import 'modules/portfolio';

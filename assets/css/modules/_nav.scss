@@ -1,20 +1,24 @@
 $module-name: 'nav';
 
 .#{$module-name} {
-	background: $gray;
-	text-align: center;
+	text-align: right;
+	width: 50%;
+	padding-top: 10px;
+	text-transform: lowercase;
+	font-size: 10pt;
 	&-container {
-		max-width: $width-large;
-		margin: auto;
-		padding: 5px 10px;
+		margin: 0;
+		padding: 0;
 	}
 	ol,ul {
 		list-style: none;
 	}
 	&__item {
 		display: inline;
-		padding: 2px 2%;
-		background: $highlight;
-		color: $dark;
+		padding: 8px 2%;
+		color: $black;
+		&--active {
+			border-bottom: solid 5px $highlight;//#e15915;
+		}
 	}
 }

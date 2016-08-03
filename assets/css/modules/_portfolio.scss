@@ -1,0 +1,26 @@
+$module-name: 'portfolio';
+
+.#{$module-name} {
+	background: $light;
+	//background: url('../img/front-page-background.jpg');
+	background-size: cover;
+	&-container {
+		margin: auto;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+	}
+	&__web, &__photography {
+		height: 50%;
+	}
+	&__web {
+		background: $accent;
+	}
+	&__photography {
+		background: $highlight;
+	}
+	
+	h1, h2, h3 {
+		color: $accent;
+	}
+}
