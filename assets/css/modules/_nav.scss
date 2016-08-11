@@ -1,24 +1,148 @@
 $module-name: 'nav';
 
 .#{$module-name} {
-	text-align: right;
 	width: 50%;
-	padding-top: 10px;
-	text-transform: lowercase;
 	font-size: 10pt;
 	&-container {
+		font-size: 14pt;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		background: none;
+		display: none;
 		margin: 0;
 		padding: 0;
+		height: 100%;
+		width: 100%;
+		padding: 10% 5%;
 	}
 	ol,ul {
 		list-style: none;
 	}
 	&__item {
-		display: inline;
 		padding: 8px 2%;
-		color: $black;
 		&--active {
-			border-bottom: solid 5px $highlight;//#e15915;
+			//border-bottom: solid 5px $highlight;//#e15915;
 		}
 	}
+
+	&-toggle {
+		float: right;
+		position: relative;
+		height: 40px;
+		width: 40px;
+		padding: 0px;
+		overflow: hidden;
+		transition: .10s ease-in-out;
+		z-index: 1000;
+		&:hover {
+			background: $highlight;
+			& span {
+				background: $dark;
+			}
+		}
+		& span {
+			display: block;
+			height: 3px;
+			width: 100%;
+			background: $accent;
+			border-radius: 3px;
+			transition: .25s ease-in-out;
+		}
+		/* Hamburger style heavily borrowed from http://codepen.io/designcouch/pen/hyFAD */
+		&__hamburger {
+			padding: 5px;
+			& span {
+				margin-top: 5px;
+				&:nth-child(1){
+					
+				}
+				&:nth-child(2){
+					transition-delay:.625s;
+				}
+				&:nth-child(3){
+					transition-delay:.75s;
+				}
+			}
+		}
+		&__close {
+			height: 100%;
+			width: 100%;
+			transform:rotate(45deg);
+			position: absolute;
+			top: 0px;
+			& span {
+				&:nth-child(1) {
+					position: absolute;
+					top: 10%;
+					left: 20px;
+					height: 0%;
+					width: 2px;
+					transition-delay:0s;
+				}
+				&:nth-child(2) {
+					position: absolute;
+					top: 20px;
+					left: 10%;
+					height: 2px;
+					width: 0%;
+					transition-delay:.25s;
+					
+				}
+			}
+		}
+	}
+	/* Nav minimized activated for mobile */
+	&--activated {
+		.#{$module-name} {
+			&-container {
+				display: block;
+				background: rgba(255,255,255,.95);
+			}
+			&-toggle {
+				&__hamburger {
+					& span {
+						&:nth-child(1){
+							width: 0%;
+							transition-delay:0s;
+						}
+						&:nth-child(2){
+							width: 0%;
+							transition-delay:.125s;
+						}
+						&:nth-child(3){
+							width: 0%;
+							transition-delay:.25s;
+						}
+					}
+				}
+
+				&__close {
+					& span {
+						&:nth-child(1) {
+							height: 80%;
+							transition-delay:.625s;
+						}
+						&:nth-child(2) {
+							width: 80%;
+							transition-delay:.375s;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media (min-width: 700px) {
+	.#{$module-name} {
+		&-container {
+			display: block;
+			height: 20px;
+		}
+		&-toggle {
+			display: none;
+		}
+	}		
 }

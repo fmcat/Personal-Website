@@ -17,30 +17,36 @@
         <header class="header">
             <div class="header-container">
                 <div class="header__logo">Connor MacDonald <span class="header__logo--light">Web Developer</span></div>
-                <div class="nav-toggle">
-                    <div class="nav-toggle__hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <nav class="nav nav--minimized">
+                    <div class="nav-toggle">
+                        <div class="nav-toggle__hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="nav-toggle__close">
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
-                    <div class="nav-toggle__close">
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                <nav class="nav">
                     <ul class="nav-container">
-                        <li class="nav__item nav__item--active">Home</li>
-                        <li class="nav__item">About</li>
-                        <li class="nav__item">Portfolio</li>
-                        <li class="nav__item">Contact</li>
-                        <li class="nav__item">GitHub</li>
+                        <li class="nav__item nav__item--active"><a href="#">Home</a></li>
+                        <li class="nav__item"><a href="#">About</a></li>
+                        <li class="nav__item"><a href="#">Portfolio</a></li>
+                        <li class="nav__item"><a href="#">Contact</a></li>
+                        <li class="nav__item"><a href="#">GitHub</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <div class="content">
+            <div class="content-header">
+                <span class="section">Blog Post</span>
+                <h1>Somerville Web Developer</h1>
+                <button class="button button--ghost">See my Portfolio</button>
+            </div>
             <div class="content-container">
+            <button class="button">See my Portfolio</button>
                 <h1>Somerville Web Developer</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget consectetur mi. Nunc sit amet felis eu metus blandit pellentesque. Morbi purus orci, efficitur in convallis ac, sollicitudin ut sem. Nam nec feugiat lorem. Quisque et dapibus augue. Cras ut odio sodales, sodales metus eu, pretium sapien. Suspendisse ornare nisl ut quam mollis tempus. Morbi sit amet est neque. Cras a sapien consequat, laoreet sapien vel, luctus magna. Duis suscipit eleifend placerat.</p>
 
@@ -55,5 +61,13 @@
                 <p>Mauris malesuada molestie facilisis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur neque neque, cursus vestibulum vulputate sit amet, egestas ac diam. Phasellus et enim tellus. Nulla lectus neque, pretium quis ipsum eget, fermentum dapibus nisi. In hac habitasse platea dictumst. Nunc a facilisis velit, quis viverra quam. Nam ultricies finibus volutpat. Curabitur aliquam sem non dui porta, non dignissim tortor fringilla.</p>
             </div>
         </div>
+        <div class="footer">
+        <div class="footer__line"></div>
+        <div class="footer__copyright">&copy 2016 Connor MacDonald</div>
+        <div class="footer__logo">CM</div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="assets/js/index.js"></script>
     </body>
 </html>

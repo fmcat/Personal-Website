@@ -15,3 +15,20 @@ body {
 h1, h2, h3, h4, h5 {
 	font-family: 'Montserrat', serif;
 }
+
+a {
+	&:link {
+		color: $accent;
+		text-decoration: none;
+	}
+	&:visited {
+
+	}
+	&:hover {
+		color: $dark;
+		text-decoration: underline;
+	}
+	&:active {
+
+	}
+}

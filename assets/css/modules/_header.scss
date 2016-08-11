@@ -8,6 +8,11 @@ $module-name: 'header';
 	position: fixed;
 	top: 0;
 	width: 100%;
+
+	-webkit-box-shadow: 0px 0px 20px 0px $black;
+	-moz-box-shadow: 0px 0px 20px 0px $black;
+	box-shadow: 0px 0px 20px 0px $black;
+
 	&-container {
 		max-width: $width-large;
 		margin: auto;
@@ -15,14 +20,27 @@ $module-name: 'header';
 		display: flex;
 	}
 	&__logo {
-		width: 50%;
+		z-index: 1000;
+		width: 70%;
 		//letter-spacing: 3px;
 		letter-spacing: 1px;
 		padding-top: 10px;
 		text-transform: uppercase;
 		font-weight: 700;
 		&--light {
+			display: none;
 			font-weight: 400;
+		}
+	}
+}
+
+
+@media (min-width: 700px) {
+	.#{$module-name} {
+		&__logo {
+			&--light {
+				display: inline-block;
+			}
 		}
 	}
 }

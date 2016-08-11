@@ -1,0 +1,30 @@
+$module-name: 'button';
+
+.#{$module-name} {
+	border: 3px solid $accent;
+	outline: none;
+	background: none;
+	font-size: 12pt;
+	padding: 10px 15px;
+	color: $accent;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 6px;
+	transition: all .3s ease;
+	cursor: pointer;
+	&:hover {
+		background: $accent;
+		color: $white;
+	}
+
+	&--ghost {
+		border: 3px solid $white;
+		color: $white;
+		&:hover {
+			border: 3px solid $white;
+			background: $white;
+			color: $accent;
+		}
+	}
+	
+}
